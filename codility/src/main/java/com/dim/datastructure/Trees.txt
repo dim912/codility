@@ -1,0 +1,107 @@
+
+
+/**
+ * Trees are used to store hierarchical data / not liner data. ( Collection of nodes)
+ * <p>
+ * * Ex : Hierarchical structure of an organization (managers and subordinates)
+ * <p>
+ * -> collection of nodes linked together to simulate hierarchy
+ * -> contains nodes(root, parent nodes children nodes) , arrows are called as links(one directional).
+ * -> child of same parent -> sibilins
+ * -> having same grand parent -> called as cousines
+ * -> nodes having no nodes -> leaf nodes
+ * -> ancestors -> the nodes which are found in the walk from root to this node.
+ * -> descendants -> the nodes to which can be walk from this node(downside)
+ * <p>
+ * Properties
+ * -> can be called as recursive data structures(trees within trees)
+ * -> all nodes has at least one incoming link, except the noot (N-1 links)
+ * -> Depth -> depth of path from root to X node. depth of root is zero.
+ * -> hight of node -> longest path from node to a lief node
+ * -> hight of node -> height of root node
+ * <p>
+ * <p>
+ * Binary Tree => each node has at most 2 nodes (every node has 3 fields. address of left child, data, address of right child)
+ * <p>
+ * Application of trees -> naturaly hierarchical data(ex: file system)
+ * organizing data(quick  -> quick search, insertion, deletion(binary search tree)
+ * <p>
+ * Trie tree  -> dictionary
+ *
+ * Network routing algorithms
+ *
+ * Binary Tree
+ * -----------
+ * When all nodes does not have more than two children
+ *
+ * Strict binary tree
+ * ------------------
+ * When all nodes has only two or no children (should not have nodes with 1 children)
+ *
+ * Complete Binary tree
+ * --------------------
+ * all levels except positbly the last aare completly filled. and all nodes are left as possibl
+ *
+ * Perfect Binary Tree
+ * ------------------
+ * All levels are fully filled
+ *
+ * => the search is optimized when the height of the primary tree is less
+ * => means => tree should be close to a perfect binary tree -> balance binary tree
+ *
+ * min height floor ( log2(N) )  , max height n-1
+ *
+ * Search complexity -> O(h)
+ *
+ * Balanced Binary Tree -> difference between height of left and right subtree for every node is not more than K (=1)
+ *
+ * How to store binary tree in memory
+ * -----------------------------------
+ *
+ * create dynamic nodes ( class Node { Nore lfet; Node right ; Data data  })
+ * Array (only for complete binary tree) -> called as heaps
+ *
+ * Binary Search Tree (BST)
+ * ---------------------------
+ * => for each node, value of all the nodes in left subtree is lesser and vlaue of all the right nodes is greater
+ *
+ * -> search -> O(log2(n)) (when balance)
+ * -> at worse case -> O(n)
+ *
+ * Insert
+ * ------
+ * -> can find the insert locaiton in -> O(log2(n)) -> then create link and and insert
+ * Deletion
+ * --------
+ * also O(log2(n))
+ *
+ * -> after deletion/insertion -> Binary tree becomes un balanced -> So, balancing is needed.
+ *
+ *
+ *
+ * 1. Search/Modify fast
+ *
+ *
+ *
+ * ** -> array -> search => o(n) , Insert o(1), Remove o(n), copy o(n)
+ * ** linkedList -> search=>o(n), (  insertion or o(1) for head, o(n) for trail)
+ *
+ * Solution -> If the array is sorted -> can do binary search -> search is o(log(n))
+ * But in this case insertion is complex (because, the sorting order should be maintained) -> so insertion is o(n), removal o(n)
+ *
+ *
+
+
+ Graph Traversal ( Tree is special kind of graph)
+ -------------------------------------------------
+ Two types
+        1. BFS - Breath first search -> level order traversal
+        2. DFS - Depth first search -> there are 6 posibiliites. But left first then right are popular as below
+                -> Pre order (first root, then left, then right) -> D,L,R
+                -> inorder (left, root, right) -> L,D,R
+                -> post order -> (left, right, root) -> L,R,D
+
+Note : Insertion, Deletion, Search -> can be done in o(h) time complexity (not O(n)
+
+
+ */
