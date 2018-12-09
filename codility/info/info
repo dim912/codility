@@ -1,0 +1,35 @@
+
+
+
+
+Optimization Problems are solved by
+
+1) Greedy -> divisable knapsack problam
+2) Dynamic programing
+3) Branch and Bounce
+
+
+Greedy method applications
+
+1) Hoffman cording
+
+
+Minimum cost Spanning Tree (number of Edeges = number of Vertices -1 )
+
+two algorithems
+1. Prims algorithem -> (start with lowest cost edge, then selected smallest connected edges) - works only with connected graphs
+2. Kruskals metohd -> (always select the minimum. So that no cycle is formed) - n^2 - works with non connection grapsh too
+
+
+MinHeap -> data structure which gives the minimum value - timecomplextiy = n log (n)
+
+
+
+Dijkstra Algorithem -> For single soruce shortest parth problam
+
+means -> start vertext is given
+find the minimum cost to some other away given
+
+ * follow relaxation method
+
+ 
